@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Contact AutoElite</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <link href="contact.css" rel="stylesheet"/>
+</head>
+<body>
+
+    <nav class="main-nav">
+        <div class="nav-container">
+            <span class="nav-logo">AutoElite</span>
+            <div class="nav-links">
+                <a href="../Menu/index.html">მთავარი</a>
+                <a href="../catalog/catalog.html">კატალოგი</a>
+                <a class="active" href="#">კონტაქტი</a>
+            </div>
+            <div class="nav-utilities">
+                <span class="lang-switch">EN / KA</span>
+                <a href="../login/login.html" class="account-trigger">
+                    <span class="material-symbols-outlined">person</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="contact-main">
+        <header class="contact-header">
+            <h1>დაუკავშირდით ჩვენს გუნდს</h1>
+            <p>გამოსცადეთ ავტო-მომსახურების უმაღლესი ხარისხი. ჩვენი სპეციალისტები მზად არიან დაგეხმარონ ნებისმიერ დროს.</p>
+        </header>
+
+        <div class="contact-grid">
+            <div class="form-section">
+                <section class="form-card">
+                    <h2>მოგვწერეთ შეტყობინება</h2>
+                    <form id="contactForm">
+                        <div class="form-row">
+                            <div class="input-group">
+                                <label>სრული სახელი</label>
+                                <input placeholder="გიორგი კაპანაძე" required type="text"/>
+                            </div>
+                            <div class="input-group">
+                                <label>ელ. ფოსტა</label>
+                                <input placeholder="gio@example.com" required type="email"/>
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+                            <label>თემა</label>
+                            <select>
+                                <option>ინფორმაცია კატალოგის მანქანაზე</option>
+                                <option>მანქანის გაყიდვა</option>
+                                <option>დაფინანსების ოფციები</option>
+                                <option>ზოგადი მხარდაჭერა</option>
+                            </select>
+                        </div>
+
+                        <div class="input-group">
+                            <label>შეტყობინება</label>
+                            <textarea placeholder="რით შეგვიძლია დაგეხმაროთ?" required rows="5"></textarea>
+                        </div>
+
+                        <button class="submit-btn" type="submit">
+                            <span>გაგზავნა</span>
+                            <span class="material-symbols-outlined">send</span>
+                        </button>
+                    </form>
+                </section>
+            </div>
+
+            <div class="sidebar-section">
+                <div class="info-cards-stack">
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <span class="material-symbols-outlined">location_on</span>
+                        </div>
+                        <div class="info-text">
+                            <h3>ჩვენი შოურუმი</h3>
+                            <p>ელიტ პლაზა 1200, პრეციზიის რაიონი<br/>შტუტგარტი, გერმანია</p>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <span class="material-symbols-outlined">call</span>
+                        </div>
+                        <div class="info-text">
+                            <h3>ცხელი ხაზი</h3>
+                            <p>+49 (0) 711 555-ELITE</p>
+                            <span class="working-hours">ორშ-შაბ, 9AM-7PM</span>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <span class="material-symbols-outlined">mail</span>
+                        </div>
+                        <div class="info-text">
+                            <h3>ელ. ფოსტა</h3>
+                            <p>concierge@autoelite.com</p>
+                            <p>media@autoelite.com</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="map-container">
+                    <div class="map-wrapper">
+                        <img alt="Stuttgart Map" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAyqgdYeOKFzoYZi_BSvMtq0JQeKPjgFBQT6R_qHI1b2hv3k6WpC24pnV_vpnUXt_PwMZHdRAPQeGAZB1m6uW8mHAAkn6dFjTS0hb0xgununX_SSiUc__DhuQiQbsy9eNKN0umkzsmONNzapx7qZ2NHmzTXf3dffkpqL1oB2XFcWxZqt6GdX3fpeC0et5vfGuITRENJ8E6Vrmxp3gUX35ge2GwEBKzVN2tL-FYcfn_AN7-pISnH6MBlX011sadrRZCJViXZTgmLZrY"/>
+                        <div class="map-overlay">
+                            <a href="#">გახსენი რუკაზე <span class="material-symbols-outlined">open_in_new</span></a>
+                        </div>
+                    </div>
+                    <div class="map-pin">
+                        <div class="ping-animation"></div>
+                        <span class="material-symbols-outlined">location_on</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <span class="footer-logo">AutoElite</span>
+                <p>ავტომობილების შეძენის მომავლის განსაზღვრა ტექნოლოგიებისა და მემკვიდრეობის სინთეზით.</p>
+            </div>
+            <div class="footer-column">
+                <h4>საიტი</h4>
+                <ul>
+                    <li><a href="#">ინვენტარი</a></li>
+                    <li><a href="#">გაყიდე მანქანა</a></li>
+                    <li><a href="#">ჩვენს შესახებ</a></li>
+                    <li><a href="#">კარიერა</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>სამართლებრივი</h4>
+                <ul>
+                    <li><a href="#">კონფიდენციალურობა</a></li>
+                    <li><a href="#">წესები და პირობები</a></li>
+                    <li><a href="#">ქუქიები</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>მხარდაჭერა</h4>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">დახმარების ცენტრი</a></li>
+                    <li><a href="#">ექსპერტთან კონტაქტი</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 AutoElite Marketplace. ყველა უფლება დაცულია.</p>
+        </div>
+    </footer>
+    <script src="contact.js"></script>
+</body>
+</html>

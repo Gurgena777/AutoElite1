@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>შესვლა | AutoElite</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+    <link href="login.css" rel="stylesheet"/>
+</head>
+<body>
+
+   <header class="main-header">
+    <div class="container header-wrapper">
+        <a class="logo" href="../Menu/index.html">AutoElite</a>
+        
+        <nav class="nav-menu">
+            <a href="../Menu/index.html" class="nav-link">მთავარი</a>
+            <a href="../catalog/catalog.html" class="nav-link">კატალოგი</a>
+            <a href="../contact/contact.html" class="nav-link">კონტაქტი</a>
+        </nav>
+    </div>
+    </div>
+</header>
+
+    <main class="container login-main">
+        <div class="login-card">
+            
+            <div class="login-title-box">
+                <h1>მოგესალმებით</h1>
+                <p>შეიყვანეთ მონაცემები პანელში შესასვლელად</p>
+            </div>
+
+            <form id="loginForm" class="login-form">
+                
+                <div class="filter-group">
+                    <label>ელ. ფოსტა</label>
+                    <input type="email" id="email" class="input-style" placeholder="name@example.com" required>
+                </div>
+
+                <div class="filter-group">
+                    <div class="password-label-row">
+                        <label>პაროლი</label>
+                        <a href="#" class="forgot-pass">დაგავიწყდათ?</a>
+                    </div>
+                    <div class="password-wrapper">
+                        <input type="password" id="password" class="input-style" placeholder="••••••••" required>
+                        <button type="button" class="password-toggle-btn">
+                            <span class="material-symbols-outlined" id="eyeIcon">visibility</span>
+                        </button>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn-detail login-submit-btn">
+                    შესვლა
+                    <span class="material-symbols-outlined">arrow_forward</span>
+                </button>
+            </form>
+
+            <div class="login-divider">
+                <span>ან</span>
+            </div>
+
+            <div class="social-login-box">
+                <button type="button" class="btn-detail social-btn">Google</button>
+                <button type="button" class="btn-detail social-btn">Apple</button>
+            </div>
+
+            <p class="register-text">
+                ახალი ხართ საიტზე? <a href="#">რეგისტრაცია</a>
+            </p>
+        </div>
+    </main>
+
+    <footer class="login-footer">
+        &copy; 2026 AutoElite. ყველა უფლება დაცულია.
+    </footer>
+
+    <script src="login.js"></script>
+</body>
+</html>

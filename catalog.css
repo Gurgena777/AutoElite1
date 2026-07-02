@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background: #f8f9fa;
+    color: #191c1d;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-nav {
+    background: white;
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    border-bottom: 1px solid #edeeef;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 16px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: #0059bb;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #636262;
+    font-size: 16px;
+    margin-right: 24px;
+    transition: color 0.2s;
+}
+
+.nav-links a:hover, .nav-links a.active {
+    color: #0059bb;
+    font-weight: 600;
+}
+
+.nav-utilities {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.catalog-main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 24px;
+    flex: 1;
+    width: 100%;
+}
+
+.catalog-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.catalog-header h1 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.catalog-header p {
+    color: #636262;
+}
+
+.catalog-layout {
+    display: grid;
+    grid-template-columns: 3fr 9fr;
+    gap: 30px;
+}
+
+.filter-sidebar {
+    background: white;
+    padding: 24px;
+    border-radius: 12px;
+    border: 1px solid #edeeef;
+    height: fit-content;
+}
+
+.filter-sidebar h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.filter-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.filter-group label {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 8px;
+    color: #414754;
+}
+
+.filter-group input, .filter-group select {
+    padding: 12px;
+    border: 1px solid #c1c6d7;
+    border-radius: 8px;
+    outline: none;
+    background: #f8f9fa;
+}
+
+.price-inputs {
+    display: flex;
+    gap: 10px;
+}
+
+.price-inputs input {
+    width: 50%;
+}
+
+.filter-btn {
+    width: 100%;
+    background: #0059bb;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background 0.2s;
+}
+
+.filter-btn:hover {
+    background: #004493;
+}
+
+.catalog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+}
+
+.car-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #edeeef;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.car-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+
+.car-image-wrapper {
+    position: relative;
+    height: 200px;
+    width: 100%;
+}
+
+.car-image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.car-badge {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background: #0059bb;
+    color: white;
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.car-details {
+    padding: 20px;
+}
+
+.car-details h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.car-specs {
+    font-size: 14px;
+    color: #636262;
+    margin-bottom: 20px;
+}
+
+.car-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #f3f4f5;
+    padding-top: 15px;
+}
+
+.car-price {
+    font-size: 20px;
+    font-weight: 700;
+    color: #191c1d;
+}
+
+.view-btn {
+    text-decoration: none;
+    background: #f8f9fa;
+    color: #0059bb;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    border: 1px solid #0059bb;
+    transition: all 0.2s;
+}
+
+.view-btn:hover {
+    background: #0059bb;
+    color: white;
+}
+
+.main-footer {
+    background: #e1e3e4;
+    padding: 20px;
+    text-align: center;
+    margin-top: auto;
+}
+
+@media (max-width: 900px) {
+    .catalog-layout {
+        grid-template-columns: 1fr;
+    }
+}

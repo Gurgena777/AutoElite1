@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoElite - კატალოგი</title>
+    <link rel="stylesheet" href="catalog.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+</head>
+<body>
+
+    <nav class="main-nav">
+        <div class="nav-container">
+            <div class="nav-logo">AutoElite</div>
+            <div class="nav-links">
+            
+            <nav class="nav-menu" id="navMenu">
+    <a href="../Menu/index.html" class="nav-link">მთავარი</a>
+    <a href="../catalog/catalog.html" class="nav-link active">კატალოგი</a>
+    <a href="../contact/contact.html" class="nav-link">კონტაქტი</a>
+            </div>
+            <div class="nav-utilities">
+                <span class="lang-switch">KA</span>
+                <a href="login.html" class="account-trigger">
+                    <span class="material-symbols-outlined">account_circle</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="catalog-main">
+        <div class="catalog-header">
+            <h1>ავტომობილების კატალოგი</h1>
+            <p>იპოვნეთ თქვენთვის სასურველი პრემიუმ კლასის ავტომობილი საუკეთესო პირობებით.</p>
+        </div>
+
+        <div class="catalog-layout">
+            <aside class="filter-sidebar">
+                <h3>ფილტრაცია</h3>
+                
+                <div class="filter-group">
+                    <label for="searchCar">ძებნა</label>
+                    <input type="text" id="searchCar" placeholder="ჩაწერეთ მოდელი...">
+                </div>
+
+                <div class="filter-group">
+                    <label for="categorySelect">კატეგორია</label>
+                    <select id="categorySelect">
+                        <option value="all">ყველა კატეგორია</option>
+                        <option value="sedan">სედანი</option>
+                        <option value="suv">ჯიპი / SUV</option>
+                        <option value="coupe">კუპე</option>
+                    </select>
+                </div>
+
+                <div class="filter-group">
+                    <label>ფასის დიაპაზონი</label>
+                    <div class="price-inputs">
+                        <input type="number" placeholder="დან">
+                        <input type="number" placeholder="მდე">
+                    </div>
+                </div>
+
+                <button class="filter-btn">გაფილტვრა</button>
+            </aside>
+
+            <section class="cars-grid-section">
+                <div class="catalog-grid">
+                    
+                    <div class="car-card">
+                        <div class="car-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1617814076367-b759c7d7e738?q=80&w=600&auto=format&fit=crop" alt="BMW M4">
+                            <span class="car-badge">ახალი</span>
+                        </div>
+                        <div class="car-details">
+                            <h3>BMW M4 Competition</h3>
+                            <p class="car-specs">2023 • ბენზინი • 3.0L • ავტომატიკა</p>
+                            <div class="car-footer">
+                                <span class="car-price">$85,000</span>
+                                <a href="#" class="view-btn">ნახვა</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="car-card">
+                        <div class="car-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?q=80&w=600&auto=format&fit=crop" alt="Mercedes AMG">
+                        </div>
+                        <div class="car-details">
+                            <h3>Mercedes-Benz C63 AMG</h3>
+                            <p class="car-specs">2022 • ბენზინი • 4.0L • ავტომატიკა</p>
+                            <div class="car-footer">
+                                <span class="car-price">$79,000</span>
+                                <a href="#" class="view-btn">ნახვა</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="car-card">
+                        <div class="car-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?q=80&w=600&auto=format&fit=crop" alt="Porsche Macan">
+                        </div>
+                        <div class="car-details">
+                            <h3>Ford</h3>
+                            <p class="car-specs">2021 • ბენზინი • 2.9L • SUV</p>
+                            <div class="car-footer">
+                                <span class="car-price">$64,000</span>
+                                <a href="#" class="view-btn">ნახვა</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="steps-grid"></div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-bottom">
+            <p>&copy; 2026 AutoElite. ყველა უფლება დაცულია.</p>
+        </div>
+    </footer>
+    <script src="catalog.js"></script>
+</body>
+</html>

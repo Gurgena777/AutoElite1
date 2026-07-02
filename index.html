@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoElite | ავტომობილების ციფრული მარკეტი</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet">
+</head>
+<body>
+
+    <div id="cookie-notification" class="cookie-banner">
+        <p>We use cookies to ensure you get the best experience on our website.</p>
+        <button id="accept-cookies" class="cookie-btn">Accept</button>
+    </div>
+
+    <header class="main-header">
+        <div class="container header-wrapper">
+            <a href="index.html" class="logo">AutoElite</a>
+            
+                 <nav class="nav-menu" id="navMenu">
+    <a href="../Menu/index.html" class="nav-link active">მთავარი</a>
+    <a href="../catalog/catalog.html" class="nav-link">კატალოგი</a>
+    <a href="../contact/contact.html" class="nav-link">კონტაქტი</a>
+</nav>
+
+            <div class="header-utilities">
+                <div class="lang-switcher">
+                    <button class="lang-btn">KA <span class="material-symbols-outlined">expand_more</span></button>
+                    <div class="dropdown-content">
+                        <a href="#">EN</a>
+                        <a href="#">KA</a>
+                    </div>
+                </div>
+                <a href="../login/login.html" class="nav-link">
+    <span class="material-symbols-outlined">person</span>
+</a>
+                <button class="burger-menu" id="burgerBtn">
+                    <span class="material-symbols-outlined">menu</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>იპოვე შენი იდეალური ავტომობილი, <br><span class="accent-text">ყოველდღიურიდან ლუქს კლასამდე</span></h1>
+                    <p>გამოცადეთ ავტომობილის შეძენის მომავალი. დაათვალიერეთ ჩვენი შერჩეული კოლექცია, რომელიც მორგებულია თქვენს ცხოვრების სტილზე.</p>
+                    <div class="hero-actions">
+                        <a href="catalog.html" class="btn btn-blue">კატალოგის ნახვა</a>
+                        <a href="#" class="btn btn-outline">მანქანის გაყიდვა</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="filter-section">
+            <div class="container">
+                <form class="filter-bento">
+                    <div class="filter-group">
+                        <label>ბრენდი</label>
+                        <select>
+                            <option>ყველა ბრენდი</option>
+                            <option>BMW</option>
+                            <option>Mercedes-Benz</option>
+                            <option>Audi</option>
+                            <option>Tesla</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label>მოდელი</label>
+                        <select>
+                            <option>ყველა მოდელი</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label>კორპუსი</label>
+                        <select>
+                            <option>სედანი</option>
+                            <option>სუვი (SUV)</option>
+                            <option>კუპე</option>
+                            <option>ჰეჩბექი</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label>ფასი</label>
+                        <select>
+                            <option>$10k - $30k</option>
+                            <option>$30k - $60k</option>
+                            <option>$60k+</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="search-btn">
+                        <span class="material-symbols-outlined">search</span> ძებნა
+                    </button>
+                </form>
+            </div>
+        </section>
+
+        <section class="categories">
+            <div class="container">
+                <div class="section-title">
+                    <span>კლასიფიკაცია</span>
+                    <h2>კატეგორიები</h2>
+                </div>
+                <div class="categories-grid">
+                    <a href="#" class="category-card">
+                        <div class="icon-wrapper"><span class="material-symbols-outlined">directions_car</span></div>
+                        <h3>სედანი</h3>
+                        <p>120+ მოდელი</p>
+                    </a>
+                    <a href="#" class="category-card">
+                        <div class="icon-wrapper"><span class="material-symbols-outlined">agriculture</span></div>
+                        <h3>SUV</h3>
+                        <p>85+ მოდელი</p>
+                    </a>
+                    <a href="#" class="category-card">
+                        <div class="icon-wrapper"><span class="material-symbols-outlined">diamond</span></div>
+                        <h3>ლუქსი</h3>
+                        <p>42+ მოდელი</p>
+                    </a>
+                    <a href="#" class="category-card">
+                        <div class="icon-wrapper"><span class="material-symbols-outlined">savings</span></div>
+                        <h3>ეკონომი</h3>
+                        <p>215+ მოდელი</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="featured">
+            <div class="container">
+                <div class="section-header">
+                    <h2>რჩეული განცხადებები</h2>
+                    <a href="catalog.html" class="view-all">ყველას ნახვა <span class="material-symbols-outlined">arrow_forward</span></a>
+                </div>
+                
+                <div class="cars-grid">
+                    <article class="car-card">
+                        <div class="car-img">
+                            <img src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=600&q=80" alt="Precision X-Series">
+                            <span class="badge badge-blue">რჩეული</span>
+                        </div>
+                        <div class="car-info">
+                            <div class="car-title-price">
+                                <h3>Precision X SUV</h3>
+                                <span class="price">$78,500</span>
+                            </div>
+                            <div class="car-specs">
+                                <span><span class="material-symbols-outlined">speed</span> 1.2k მილი</span>
+                                <span><span class="material-symbols-outlined">settings</span> ავტომატიკა</span>
+                                <span><span class="material-symbols-outlined">ev_station</span> ელექტრო</span>
+                            </div>
+                            <button class="btn-detail">დეტალები</button>
+                        </div>
+                    </article>
+
+                    <article class="car-card">
+                        <div class="car-img">
+                            <img src="https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=600&q=80" alt="Apex Executive GT">
+                            <span class="badge badge-orange">ლუქსი</span>
+                        </div>
+                        <div class="car-info">
+                            <div class="car-title-price">
+                                <h3>Apex Executive GT</h3>
+                                <span class="price">$115,000</span>
+                            </div>
+                            <div class="car-specs">
+                                <span><span class="material-symbols-outlined">speed</span> 5.4k მილი</span>
+                                <span><span class="material-symbols-outlined">settings</span> DCT</span>
+                                <span><span class="material-symbols-outlined">local_gas_station</span> ჰიბრიდი</span>
+                            </div>
+                            <button class="btn-detail">დეტალები</button>
+                        </div>
+                    </article>
+
+                    <article class="car-card">
+                        <div class="car-img">
+                            <img src="https://images.unsplash.com/photo-1494976388531-d1058494cdd8?auto=format&fit=crop&w=600&q=80" alt="Vanguard Estate">
+                        </div>
+                        <div class="car-info">
+                            <div class="car-title-price">
+                                <h3>Vanguard Estate V6</h3>
+                                <span class="price">$52,900</span>
+                            </div>
+                            <div class="car-specs">
+                                <span><span class="material-symbols-outlined">speed</span> 22.1k მილი</span>
+                                <span><span class="material-symbols-outlined">settings</span> ავტომატიკა</span>
+                                <span><span class="material-symbols-outlined">local_gas_station</span> ბენზინი</span>
+                            </div>
+                            <button class="btn-detail">დეტალები</button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="how-it-works">
+            <div class="container">
+                <div class="section-center-title">
+                    <h2>AutoElite-ის გამოცდილება</h2>
+                    <p>ავტომობილის ყიდვა-გაყიდვა უნდა იყოს მარტივი და გამჭვირვალე.</p>
+                </div>
+                <div class="steps-grid">
+                    <div class="step-item">
+                        <div class="step-icon"><span class="material-symbols-outlined">search_check</span></div>
+                        <h3>შეარჩიე მანქანა</h3>
+                        <p>დაათვალიერე შემოწმებული და ვერიფიცირებული მანქანების ბაზა დეტალური აღწერით.</p>
+                    </div>
+                    <div class="step-item">
+                        <div class="step-icon"><span class="material-symbols-outlined">verified_user</span></div>
+                        <h3>უსაფრთხო ტრანზაქცია</h3>
+                        <p>ჩვენ ვზრუნავთ საბუთების მოწესრიგებასა და უსაფრთხო ანგარიშსწორებაზე.</p>
+                    </div>
+                    <div class="step-item">
+                        <div class="step-icon"><span class="material-symbols-outlined">key</span></div>
+                        <h3>მიყვანა მისამართზე</h3>
+                        <p>მიიღე შენი ახალი ავტომობილი პირდაპირ სახლის კართან სპეც-ტრანსპორტირებით.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="newsletter">
+            <div class="container">
+                <div class="newsletter-box">
+                    <div class="newsletter-text">
+                        <h2>იყავი ყოველთვის საქმის კურსში</h2>
+                        <p>გამოიწერე სიახლეები ექსკლუზიური განცხადებებისა და ბაზრის ანალიტიკის მისაღებად.</p>
+                    </div>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="თქვენი ელ-ფოსტა" required>
+                        <button type="submit" class="btn-subscribe">გამოწერა</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <h3>AutoElite</h3>
+                <p>ავტომობილების ყიდვა-გაყიდვის ინოვაციური და უსაფრთხო პლატფორმა.</p>
+            </div>
+            <div class="footer-links">
+                <h4>სწრაფი ლინკები</h4>
+                <ul>
+                    <li><a href="catalog.html">ყიდვა</a></li>
+                    <li><a href="#">გაყიდვა</a></li>
+                    <li><a href="#">დაფინანსება</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>კომპანია</h4>
+                <ul>
+                    <li><a href="#">ჩვენს შესახებ</a></li>
+                    <li><a href="contact.html">კონტაქტი</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 AutoElite. ყველა უფლება დაცულია.</p>
+        </div>
+    </footer>
+
+    <button id="scrollToTop" class="scroll-btn"><span class="material-symbols-outlined">arrow_upward</span></button>
+
+    <script src="script.js"></script>
+</body>
+</html>
